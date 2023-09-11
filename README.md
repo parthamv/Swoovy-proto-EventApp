@@ -1,3 +1,4 @@
+
 # My Events App Documentation
 
 Welcome to the documentation for the My Events App! This app allows users to view tech events, filter them based on location and date, and access detailed information about each event. Here's a step-by-step guide to understanding and running the project:
@@ -9,7 +10,8 @@ Welcome to the documentation for the My Events App! This app allows users to vie
 4. [Components Overview](#components-overview)
 5. [Data Management](#data-management)
 6. [Design Choices](#design-choices)
-7. [Future Enhancements](#future-enhancements)
+7. [Testing Components](#testing-components)
+8. [Future Enhancements](#future-enhancements)
 
 ### 1. Prerequisites <a name="prerequisites"></a>
 
@@ -75,14 +77,48 @@ The application follows a standard React project structure, with additional dire
 ### 6. Design Choices <a name="design-choices"></a>
 
 - **Ant Design**: The app utilizes the Ant Design component library for UI components, ensuring a consistent and polished UI.
-  
 - **Responsive Design**: The app layout adapts to different screen sizes using Ant Design's Grid System (Row and Col components).
-
 - **Theming**: The app follows a dark theme with strategic use of colors to highlight key components and ensure readability.
-
 - **ProLayout**: Used for the main application layout, providing easy-to-navigate sidebars and other layout features.
 
-### 7. Future Enhancements <a name="future-enhancements"></a>
+### 7. Testing Components <a name="testing-components"></a>
+
+To ensure the reliability and correctness of the My Events App components, comprehensive tests have been written using React Testing Library. Here's a brief overview of tests for some of the main components:
+
+#### EventModal.test.js
+
+This test file contains unit tests for the `EventModal` component. It ensures that:
+
+- The modal renders correctly and without errors.
+- Event details passed to the modal as props are correctly displayed.
+- Closing the modal works as expected.
+
+#### EventCard.test.js
+
+Tests within this file focus on the `EventCard` component, making sure:
+
+- The card displays event details such as title, description, and image.
+- Clicking on the card triggers the right actions (e.g., opening the `EventModal`).
+
+#### Running the Tests
+
+To run the tests and ensure that the components behave as expected, follow these steps:
+
+1. Navigate to the project directory:
+
+```bash
+cd [repository-name]
+```
+
+2. Run the test command:
+
+```bash
+npm test
+```
+
+This will initiate Jest, which will automatically run all the test files in the project and display the results in the terminal.
+
+### 8. Future Enhancements <a name="future-enhancements"></a>
 
 1. **User Authentication**: Implement user sign-up and login to allow personalized event recommendations.
 2. **Event Creation**: Allow users to create and manage their events.
