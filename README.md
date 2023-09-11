@@ -1,70 +1,130 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Events App Documentation
 
-## Available Scripts
+Welcome to the documentation for the My Events App! This app allows users to view tech events, filter them based on location and date, and access detailed information about each event. Here's a step-by-step guide to understanding and running the project:
 
-In the project directory, you can run:
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [Installation and Running the App](#installation-and-running-the-app)
+3. [Project Structure](#project-structure)
+4. [Components Overview](#components-overview)
+5. [Data Management](#data-management)
+6. [Design Choices](#design-choices)
+7. [Testing Components](#testing-components)
+8. [Future Enhancements](#future-enhancements)
 
-### `npm start`
+### 1. Prerequisites <a name="prerequisites"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ensure you have the following installed:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (version 14+ recommended)
+- npm (generally included with Node.js)
 
-### `npm test`
+### 2. Installation and Running the App <a name="installation-and-running-the-app"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+```bash
+git clone [repository-link]
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd [repository-name]
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the required dependencies:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Run the application:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app should now be running on `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Project Structure <a name="project-structure"></a>
 
-## Learn More
+The application follows a standard React project structure, with additional directories for Redux management.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `components`: Contains reusable UI components.
+- `pages`: Contains the main views or screens.
+- `services`: Holds the async functions used for data fetching.
+- `store`: Contains Redux setup including actions, reducers, and the store configuration.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Components Overview <a name="components-overview"></a>
 
-### Code Splitting
+1. **EventCard**: Represents an individual event with a cover image, title, and description.
+2. **EventModal**: A modal popup displaying detailed information about an event when clicked.
+3. **Filters**: Provides dropdowns for location and date to filter displayed events.
+4. **Footer**: A footer component showcasing social media icons and relevant links.
+5. **HomePage**: The landing page with a welcome message and a description of the app.
+6. **EventsPage**: Displays a list of events and provides filters for narrowing down the event list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 5. Data Management <a name="data-management"></a>
 
-### Analyzing the Bundle Size
+1. The app uses Redux Toolkit for state management.
+2. `eventsService`: Contains the asynchronous action to fetch events.
+3. `eventsSlice`: Defines the slice of the store dedicated to events and provides reducers.
+4. `store`: Configures the Redux store and combines all reducers.
+5. `rootReducer`: Combines the app's reducers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 6. Design Choices <a name="design-choices"></a>
 
-### Making a Progressive Web App
+- **Ant Design**: The app utilizes the Ant Design component library for UI components, ensuring a consistent and polished UI.
+- **Responsive Design**: The app layout adapts to different screen sizes using Ant Design's Grid System (Row and Col components).
+- **Theming**: The app follows a dark theme with strategic use of colors to highlight key components and ensure readability.
+- **ProLayout**: Used for the main application layout, providing easy-to-navigate sidebars and other layout features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 7. Testing Components <a name="testing-components"></a>
 
-### Advanced Configuration
+To ensure the reliability and correctness of the My Events App components, comprehensive tests have been written using React Testing Library. Here's a brief overview of tests for some of the main components:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### EventModal.test.js
 
-### Deployment
+This test file contains unit tests for the `EventModal` component. It ensures that:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- The modal renders correctly and without errors.
+- Event details passed to the modal as props are correctly displayed.
+- Closing the modal works as expected.
 
-### `npm run build` fails to minify
+#### EventCard.test.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tests within this file focus on the `EventCard` component, making sure:
+
+- The card displays event details such as title, description, and image.
+- Clicking on the card triggers the right actions (e.g., opening the `EventModal`).
+
+#### Running the Tests
+
+To run the tests and ensure that the components behave as expected, follow these steps:
+
+1. Navigate to the project directory:
+
+```bash
+cd [repository-name]
+```
+
+2. Run the test command:
+
+```bash
+npm test
+```
+
+This will initiate Jest, which will automatically run all the test files in the project and display the results in the terminal.
+
+### 8. Future Enhancements <a name="future-enhancements"></a>
+
+1. **User Authentication**: Implement user sign-up and login to allow personalized event recommendations.
+2. **Event Creation**: Allow users to create and manage their events.
+3. **RSVP Feature**: Enable users to RSVP to events, helping event organizers plan better.
+4. **Real-time Notifications**: Integrate WebSockets to provide real-time updates for new events or changes to existing events.
+
+---
+
+Thank you for going through the documentation for the My Events App. If you have any questions or face issues, please refer to the app's GitHub repository for more details or to raise issues.
