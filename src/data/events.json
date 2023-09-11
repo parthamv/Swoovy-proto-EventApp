@@ -1,0 +1,165 @@
+[
+    [
+        {
+          "id": 1,
+          "title": "React Summit",
+          "date": "2023-10-10",
+          "location": "New York, NY",
+          "description": "Join the largest React conference in North America, exploring the latest trends in React development.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 2,
+          "title": "AI & Machine Learning Expo",
+          "date": "2023-10-12",
+          "location": "San Francisco, CA",
+          "description": "Discover the future of artificial intelligence and machine learning with industry leaders.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Web Design Workshop",
+          "date": "2023-10-15",
+          "location": "Los Angeles, CA",
+          "description": "Hone your web design skills with hands-on workshops led by expert designers.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Blockchain Bootcamp",
+          "date": "2023-10-18",
+          "location": "Chicago, IL",
+          "description": "A deep dive into the world of blockchain and cryptocurrency. Ideal for beginners and enthusiasts.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Startup Pitch Night",
+          "date": "2023-10-20",
+          "location": "Austin, TX",
+          "description": "Watch emerging startups pitch their ideas to a panel of investors. Networking opportunities available.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 6,
+          "title": "VR & AR Showcase",
+          "date": "2023-10-23",
+          "location": "Seattle, WA",
+          "description": "Experience the future of virtual and augmented reality. Demos available throughout the event.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 7,
+          "title": "IoT Symposium",
+          "date": "2023-10-25",
+          "location": "Denver, CO",
+          "description": "Explore the impact and potential of the Internet of Things across various industries.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 8,
+          "title": "Gaming Expo",
+          "date": "2023-10-27",
+          "location": "Atlanta, GA",
+          "description": "Play the latest games, meet developers, and learn about the gaming industry's next big thing.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Digital Marketing Summit",
+          "date": "2023-10-29",
+          "location": "Miami, FL",
+          "description": "Enhance your digital marketing strategies with insights from top industry professionals.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 10,
+          "title": "E-commerce Workshop",
+          "date": "2023-10-31",
+          "location": "Boston, MA",
+          "description": "Discover tools and techniques to boost your e-commerce platform's performance.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 11,
+          "title": "Data Science Bootcamp",
+          "date": "2023-11-02",
+          "location": "Dallas, TX",
+          "description": "Learn from data experts about analytics, machine learning, and more.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 12,
+          "title": "Robotics Fair",
+          "date": "2023-11-05",
+          "location": "San Diego, CA",
+          "description": "Experience the latest advancements in robotics and automation.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 13,
+          "title": "Cloud Computing Conference",
+          "date": "2023-11-07",
+          "location": "Portland, OR",
+          "description": "Discover how cloud solutions can transform your business operations.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 14,
+          "title": "Sustainable Tech Forum",
+          "date": "2023-11-10",
+          "location": "Phoenix, AZ",
+          "description": "Explore technology's role in creating a sustainable future.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 15,
+          "title": "Mobile App Development Workshop",
+          "date": "2023-11-12",
+          "location": "Philadelphia, PA",
+          "description": "Learn best practices for developing intuitive and responsive mobile applications.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 16,
+          "title": "Cybersecurity Symposium",
+          "date": "2023-11-15",
+          "location": "Houston, TX",
+          "description": "Stay updated on the latest cybersecurity threats and protection methods.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 17,
+          "title": "UX & UI Design Conference",
+          "date": "2023-11-18",
+          "location": "San Antonio, TX",
+          "description": "Enhance user experiences by exploring the latest in design principles and trends.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 18,
+          "title": "Tech for Education Summit",
+          "date": "2023-11-20",
+          "location": "Orlando, FL",
+          "description": "Explore the impact of technology on modern education methods and tools.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 19,
+          "title": "Open Source Festival",
+          "date": "2023-11-23",
+          "location": "Indianapolis, IN",
+          "description": "Celebrate open-source contributions and discover new projects.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        },
+        {
+          "id": 20,
+          "title": "Smart Cities Expo",
+          "date": "2023-11-25",
+          "location": "Las Vegas, NV",
+          "description": "Understand how technology is shaping the cities of the future.",
+          "image": "https://i.imgur.com/3JyiQok.jpg"
+        }
+      ]   
+      
+  ]
